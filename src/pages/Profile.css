@@ -1,0 +1,93 @@
+/* ================================
+   PROFILE - DARK TECHNO STYLE
+================================ */
+
+.header {
+  width: 100%;
+  padding: 1em;
+  background: #111820;
+  border: 1px solid #263442;
+  color: #e6edf3;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Contenedor de la información */
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Avatar */
+
+.header__avatar {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #00a8cc, #0077b6);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 4px rgba(0, 168, 204, 0.1);
+}
+
+/* Nombre */
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+}
+
+.header__name {
+  color: #f0f6fc;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/* Correo y documento */
+
+.header__email {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 12px;
+  background: #0b1118;
+  border: 1px solid #263442;
+  border-radius: 7px;
+  color: #8b9aaa;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header__user {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header__info {
+    min-width: 0;
+  }
+
+  .header__email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,24 @@
+/* ===== LAYOUT ===== */
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__body {
+  flex: 1;
+  display: flex;
+  background-color: black;
+}
+
+.layout__sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.layout__content {
+  flex: 1;
+  overflow-y: auto;
+  height: 1000px;
+}

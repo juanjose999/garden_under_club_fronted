@@ -1,0 +1,141 @@
+.tickets {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #e6edf3;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.tickets__header {
+    margin-bottom: 25px;
+}
+
+.tickets__title {
+    margin: 0 0 8px;
+    color: #f0f6fc;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tickets__description {
+    margin: 0;
+    color: #8b9aaa;
+    font-size: 14px;
+}
+
+.tickets__message {
+    padding: 15px 18px;
+    background: #111820;
+    border: 1px solid #263442;
+    border-radius: 10px;
+    color: #8b9aaa;
+}
+
+.tickets__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.ticket-card {
+    overflow: hidden;
+    background: #111820;
+    border: 1px solid #263442;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    border-bottom: 1px solid #263442;
+}
+
+.ticket-card__label {
+    display: block;
+    margin-bottom: 6px;
+    color: #6f8191;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ticket-card__code {
+    margin: 0;
+    color: #00a8cc;
+    font-size: 18px;
+}
+
+.ticket-card__status {
+    padding: 6px 10px;
+    background: rgba(0, 168, 204, 0.1);
+    border: 1px solid rgba(0, 168, 204, 0.3);
+    border-radius: 6px;
+    color: #00c4e8;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.ticket-card__body {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #263442;
+}
+
+.ticket-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ticket-card__info span {
+    color: #6f8191;
+    font-size: 12px;
+}
+
+.ticket-card__info strong {
+    color: #e6edf3;
+    font-size: 15px;
+}
+
+.ticket-card__event {
+    padding: 20px;
+}
+
+.ticket-card__event h3 {
+    margin: 0 0 8px;
+    color: #f0f6fc;
+    font-size: 19px;
+}
+
+.ticket-card__event p {
+    margin: 6px 0;
+    color: #8b9aaa;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .tickets {
+        padding: 20px;
+    }
+
+    .tickets__list {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-card__header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ticket-card__body {
+        gap: 25px;
+    }
+}

@@ -1,0 +1,16 @@
+.events{
+  padding: 2em;
+}
+.events__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+.events__title {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
