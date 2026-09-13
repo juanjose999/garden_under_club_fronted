@@ -10,10 +10,7 @@
 
 .header__container {
   max-width: 1200px;
-  height: 72px;
   margin: 0 auto;
-  padding: 0 32px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +23,7 @@
 }
 
 .header__logo {
-  height: 42px;
+  height: 36px;
   width: auto;
   object-fit: contain;
 }

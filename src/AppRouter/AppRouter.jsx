@@ -15,7 +15,7 @@ export const AppRouter = () => {
   return (
     <Routes>
        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Events />} />
           <Route path="/eventos" element={<Events />} />
           <Route path="/noticias" element={<News />} />
           <Route path="/tickets" element={<Tickets />} />

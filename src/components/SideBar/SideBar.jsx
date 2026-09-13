@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./SideBar.css";
 import "../../styles/variables.css";
+import { useAuth } from "../../context/AuthProvider"; 
+
 
 import { Link } from "react-router-dom";
 
@@ -13,8 +15,13 @@ const MENU_ITEMS = [
 
 export const Sidebar = () => {
 
+  const { user, token } = useAuth();
+  const isLogin = token != null
+
   const [activeSection, setActiveSection] = useState("events");
 
+  const filteredSections = isLogin ? MENU_ITEMS : MENU_ITEMS.filter(m => m.id === 'events')
+  console.log('filtradas-', filteredSections)
   const handleChangeSection = (event) => {
     const section = event.currentTarget.dataset.section;
     setActiveSection(section);
@@ -25,7 +32,7 @@ export const Sidebar = () => {
 
 
       <nav className="sidebar__nav" aria-label="Menú principal">
-        {MENU_ITEMS.map((item) => (
+        {filteredSections.map((item) => (
           <Link
             key={item.id}
             to={item.path}

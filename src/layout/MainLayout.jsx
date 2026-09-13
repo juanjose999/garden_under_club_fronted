@@ -1,7 +1,6 @@
 import { Header } from "../components/Header/Header"
 import { Sidebar } from "../components/SideBar/SideBar"
 import { Footer } from "../components/Footer/Footer"
-import { Home } from "../pages/Home"
 
 import "./MainLayout.css"
 import { Outlet } from "react-router-dom";
