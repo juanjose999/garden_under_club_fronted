@@ -30,6 +30,17 @@ export const Profile = () => {
             {user?.documento}
           </span>
 
+        <div>
+          <span className="header__email">
+            {user?.fechaRegistro}
+          </span>
+
+          <span className="header__email">
+            {user?.fechaActualizacion}
+          </span>
+
+        </div>
+
       </div>
 
     </header>

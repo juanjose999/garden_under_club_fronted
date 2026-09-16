@@ -21,7 +21,7 @@ export const LoginSingup = () => {
     password: "",
   });
 
-  const [isSignup, setIsSignup] = useState(true);
+  const [isSignup, setIsSignup] = useState(false);
 
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -70,7 +70,7 @@ export const LoginSingup = () => {
         setError("No fue posible crear la cuenta");
         return;
       }
-      console.log('iuser,',resulSignup.data.user)
+      console.log('iuser,',resulSignup.user)
       login(resulSignup.user, resulSignup.data.token);
       console.log(resulSignup);
       navigate("/eventos");
